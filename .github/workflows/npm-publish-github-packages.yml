@@ -49,9 +49,6 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
 
-      - name: init pckage
-        run: npm init
-
       - name: Install npm dependencies
         run: npm install
 

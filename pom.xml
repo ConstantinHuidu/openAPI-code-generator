@@ -141,7 +141,7 @@
 							<generatorName>typescript-axios</generatorName>
 							<configOptions>
 								<title>frontend</title>
-								<nameName>@chuidu/demo-code-generator</nameName>
+								<npmName>@chuidu/demo-code-generator</npmName>
 								<npmVersion>${project.version}</npmVersion>
 								<npmRepository>https://npm.pkg.github.com</npmRepository>
 							</configOptions>
