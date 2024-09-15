@@ -34,7 +34,7 @@ jobs:
     needs: build-jar
     runs-on: ubuntu-latest
     permissions:
-      content: read
+#      content: read
       packages: write
 
     steps:
