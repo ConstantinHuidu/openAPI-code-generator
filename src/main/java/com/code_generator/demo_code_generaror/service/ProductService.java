@@ -25,6 +25,7 @@ public class ProductService {
     public List<Product> getAllVideos(){
         var products = this.productRepository.findAll();
 
+
         return this.productMapper.toDto(products);
     }
 }
