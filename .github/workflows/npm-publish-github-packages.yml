@@ -22,7 +22,6 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        uses: actions/checkout@v4
         run: mvn -B package --file pom.xml
 
       - name: Publish frontend Artifact
