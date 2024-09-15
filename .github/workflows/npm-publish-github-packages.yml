@@ -2,7 +2,7 @@ name: Publish frontend-ts-axios-package
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 jobs:
   build-jar:
