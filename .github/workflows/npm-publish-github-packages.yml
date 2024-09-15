@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: frontend-ts-axios-package
-          path: ./openAPI-code-generator/target/generated-sources/frontend-ts-axios-package
+          path: ./target/generated-sources/frontend-ts-axios-package
 
   publish-frontend-ts-axios-package:
     needs: build-jar
