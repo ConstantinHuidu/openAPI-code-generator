@@ -1,0 +1,50 @@
+openapi: 3.0.3
+info:
+  title: Test Code generation tools
+  description: Small app to test the openAPI code generation
+  version: 1.0.0
+  contact:
+    email: constantin.huidu@gmail.com
+
+servers:
+    - url: http://localhost:8081/api
+      description: Local testing server
+
+paths:
+
+  /products:
+    get:
+      tags:
+        - products
+      summary: Get products list
+      operationId: getProducts
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+
+components:
+  schemas:
+
+    Product:
+      type: object
+      properties:
+        id:
+          type: string
+        sku:
+          type: string
+        name:
+          type: string
+        quantity:
+          type: integer
+      required:
+        - id
+        - sku
+        - name
+        - availableQuantity
+
